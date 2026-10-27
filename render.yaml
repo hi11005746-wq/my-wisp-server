@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wisp-server
+    runtime: python
+    buildCommand: pip install wisp-server
+    startCommand: python -m wisp_server --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
