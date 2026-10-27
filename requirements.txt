@@ -1,1 +1,1 @@
-wisp-server-python
+wisp-server
